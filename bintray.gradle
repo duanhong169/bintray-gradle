@@ -65,6 +65,10 @@ publishing {
                         dependencyNode.appendNode('version', it.version)
                     }
                 }
+                def licensesNode = asNode().appendNode('licenses')
+                def licenseNode = licensesNode.appendNode('license')
+				licenseNode.appendNode('name', licenseName)
+				licenseNode.appendNode('url', licenseUrl)
             }
         }
     }
@@ -87,6 +91,7 @@ bintray {
         repo = bintrayRepo
         name = bintrayName
         desc = libraryDescription
+        licenses = allLicenses
         publish = true
         publicDownloadNumbers = true
         version {

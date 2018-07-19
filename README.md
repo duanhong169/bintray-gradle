@@ -48,16 +48,25 @@ In your library module's `build.gradle`, add:
 
 ```groovy
 ext {
-    bintrayRepo = 'Hong' // your bintray repo name
-    bintrayName = 'colorpicker' // your bintray library name
-	
+    bintrayRepo = 'Hong'
+    bintrayName = 'checkerboarddrawable'
+
     publishedGroupId = 'com.github.duanhong169'
-    artifact = 'colorpicker'
-	
-    libraryDescription = 'A `ColorPicker` for android'
-    libraryVersion = '1.0.3'
+    artifact = 'checkerboarddrawable'
+
+    libraryDescription = 'A custom Drawable to use as background which embody "transparent", AKA checkerboard grid.'
+    libraryVersion = '1.0.0'
+    
+    gitUrl = 'https://github.com/duanhong169/CheckerboardDrawable.git'
+    siteUrl = 'https://github.com/duanhong169/CheckerboardDrawable'
+
+    licenseName = 'Apache License 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
 }
 ```
+
+> Edit the values to yours as needed.
 
 ### 4. apply the script:
 
@@ -85,4 +94,4 @@ in your project root path.
 
 ## Example
 
-See the project [`ColorPicker`](https://github.com/duanhong169/ColorPicker) for example.
+See the project [`ColorPicker`](https://github.com/duanhong169/CheckerboardDrawable) for example.

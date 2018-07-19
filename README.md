@@ -64,8 +64,15 @@ ext {
 In your library module's `build.gradle`, add:
 
 ```groovy
+apply from: 'https://raw.githubusercontent.com/duanhong169/bintray-gradle/master/bintray.gradle'
+```
+
+Or you can copy the `bintray.gradle` file into your library module's root directory, and apply from it by add:
+
+```groovy
 apply from: 'bintray.gradle'
 ```
+
 
 ## Publish!
 

@@ -73,7 +73,6 @@ Or you can copy the `bintray.gradle` file into your library module's root direct
 apply from: 'bintray.gradle'
 ```
 
-
 ## Publish!
 
 Just run:
@@ -83,3 +82,7 @@ Just run:
 ```
 
 in your project root path.
+
+## Example
+
+See the project [`ColorPicker`](https://github.com/duanhong169/ColorPicker) for example.

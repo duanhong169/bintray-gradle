@@ -65,10 +65,18 @@ publishing {
                         dependencyNode.appendNode('version', it.version)
                     }
                 }
+                
+                asNode().appendNode('url', siteUrl)
+                
                 def licensesNode = asNode().appendNode('licenses')
                 def licenseNode = licensesNode.appendNode('license')
-				licenseNode.appendNode('name', licenseName)
-				licenseNode.appendNode('url', licenseUrl)
+                licenseNode.appendNode('name', licenseName)
+                licenseNode.appendNode('url', licenseUrl)
+                
+                def scmNode = asNode().appendNode('scm')
+                scmNode.appendNode('connection', gitUrl)
+                scmNode.appendNode('developerConnection', gitUrl)
+                scmNode.appendNode('url', siteUrl)
             }
         }
     }
@@ -91,6 +99,8 @@ bintray {
         repo = bintrayRepo
         name = bintrayName
         desc = libraryDescription
+        websiteUrl = siteUrl
+        vcsUrl = gitUrl
         licenses = allLicenses
         publish = true
         publicDownloadNumbers = true

@@ -94,4 +94,4 @@ in your project root path.
 
 ## Example
 
-See the project [`ColorPicker`](https://github.com/duanhong169/CheckerboardDrawable) for example.
+See the project [`CheckerboardDrawable`](https://github.com/duanhong169/CheckerboardDrawable) for example.

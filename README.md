@@ -87,7 +87,7 @@ apply from: 'bintray.gradle'
 Just run:
 
 ```shell
-./gradlew bintrayUpload
+./gradlew clean install bintrayUpload
 ```
 
 in your project root path.

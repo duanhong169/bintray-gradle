@@ -82,6 +82,20 @@ Or you can copy the `bintray.gradle` file into your library module's root direct
 apply from: 'bintray.gradle'
 ```
 
+#### 4.1 No transient dependency version
+
+The default `bintray.gradle` will add the 'implementation' dependencies for your library automatically, so the library users only need to specify the dependency of your library. If this is not what you want, use the 'no transient' version:
+
+```groovy
+apply from: 'https://raw.githubusercontent.com/duanhong169/bintray-gradle/master/bintray-no-transient.gradle'
+```
+
+Or:
+
+```groovy
+apply from: 'bintray-no-transient'
+```
+
 ## Publish!
 
 Just run:
